@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Share Tech Mono', sans-serif;
+}
+
+#canvas {
+    position: relative;
+    width: 320px;
+    height: 480px;
+    overflow: hidden;
+    background-color: black;
+
+    -webkit-animation: opning_back 3s linear 0 1 normal;
+       -moz-animation: opning_back 3s linear 0 1 normal;
+        -ms-animation: opning_back 3s linear 0 1 normal;
+         -o-animation: opning_back 3s linear 0 1 normal;
+            animation: opning_back 3s linear 0 1 normal;
+}
+
+@-webkit-keyframes opning_back {
+    0% {background-color: white;}
+    99% {background-color: white;}
+}
+@-moz-keyframes opning_back {
+    0% {background-color: white;}
+    99% {background-color: white;}
+}
+@-ms-keyframes opning_back {
+    0% {background-color: white;}
+    99% {background-color: white;}
+}
+@-o-keyframes opning_back {
+    0% {background-color: white;}
+    99% {background-color: white;}
+}
+@keyframes opning_back {
+    0% {background-color: white;}
+    99% {background-color: white;}
+}
+
+#opning {
+    position: absolute;
+    width: 320px;
+    height: 0px;
+    overflow: hidden;
+    background-color: black;
+    -webkit-animation: opning 3s linear 0 1 normal;
+       -moz-animation: opning 3s linear 0 1 normal;
+        -ms-animation: opning 3s linear 0 1 normal;
+         -o-animation: opning 3s linear 0 1 normal;
+            animation: opning 3s linear 0 1 normal;
+}
+
+@-webkit-keyframes opning {
+    0% { width: 20px; height: 6px; top: 237px; left: 150px; /* visibility: 'visible' */ }
+    20% { width: 320px; height: 6px; top: 237px; left: 0px; /*visibility: 'visible' */ }
+    100% { height: 480px; /*visibility: 'visible';*/ }
+}
+@-moz-keyframes opning {
+    0% { width: 20px; height: 6px; top: 237px; left: 150px; /* visibility: 'visible' */ }
+    20% { width: 320px; height: 6px; top: 237px; left: 0px; /*visibility: 'visible' */ }
+    100% { height: 480px; /*visibility: 'visible';*/ }
+}
+@-ms-keyframes opning {
+    0% { width: 20px; height: 6px; top: 237px; left: 150px; /* visibility: 'visible' */ }
+    20% { width: 320px; height: 6px; top: 237px; left: 0px; /*visibility: 'visible' */ }
+    100% { height: 480px; /*visibility: 'visible';*/ }
+}
+@-o-keyframes opning {
+    0% { width: 20px; height: 6px; top: 237px; left: 150px; /* visibility: 'visible' */ }
+    20% { width: 320px; height: 6px; top: 237px; left: 0px; /*visibility: 'visible' */ }
+    100% { height: 480px; /*visibility: 'visible';*/ }
+}
+@keyframes opning {
+    0% { width: 20px; height: 6px; top: 237px; left: 150px; /* visibility: 'visible' */ }
+    20% { width: 320px; height: 6px; top: 237px; left: 0px; /*visibility: 'visible' */ }
+    100% { height: 480px; /*visibility: 'visible';*/ }
+}
+
+#screen {
+    position:absolute;
+    top: 100px;
+    width :100%;
+    color:white;
+    text-align:center;
+    font-weight: bold;
+
+    -webkit-animation: opening_animation 2s linear 1.8s 1 normal;
+       -moz-animation: opening_animation 2s linear 1.8s 1 normal;
+        -ms-animation: opening_animation 2s linear 1.8s 1 normal;
+         -o-animation: opening_animation 2s linear 1.8s 1 normal;
+            animation: opening_animation 2s linear 1.8s 1 normal;
+}
+
+@-webkit-keyframes opening_animation {
+    0% { top: -200px; }
+    100% { top: 100px; }
+}
+@-moz-keyframes opening_animation {
+    0% { top: -200px; }
+    100% { top: 100px; }
+}
+@-ms-keyframes opening_animation {
+    0% { top: -200px; }
+    100% { top: 100px; }
+}
+@-o-keyframes opening_animation {
+    0% { top: -200px; }
+    100% { top: 100px; }
+}
+@keyframes opening_animation {
+    0% { top: -200px; }
+    100% { top: 100px; }
+}
+
+#screen_content {
+    position :absolute;
+    left:115px;
+    height:100px;
+}
+
+
+#screen ul {
+    list-style:none;
+    text-align:left;
+    margin:0;
+    padding: 0;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    height: 60px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.shake {
+    -webkit-animation-fill-mode: both;
+       -moz-animation-fill-mode: both;
+        -ms-animation-fill-mode: both;
+         -o-animation-fill-mode: both;
+            animation-fill-mode: both;
+
+    -webkit-animation-duration: 1s;
+       -moz-animation-duration: 1s;
+        -ms-animation-duration: 1s;
+         -o-animation-duration: 1s;
+            animation-duration: 1s;
+
+    -webkit-animation-name: shake;
+       -moz-animation-name: shake;
+         -o-animation-name: shake;
+            animation-name: shake;
+}
+
+@-webkit-keyframes shake {
+    0%, 100% {-webkit-transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-3px);}
+    20%, 40%, 60%, 80% {-webkit-transform: translateX(3px);}
+}
+
+@-moz-keyframes shake {
+    0%, 100% {-moz-transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {-moz-transform: translateX(-3px);}
+    20%, 40%, 60%, 80% {-moz-transform: translateX(3px);}
+}
+
+@-o-keyframes shake {
+    0%, 100% {-o-transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {-o-transform: translateX(-3px);}
+    20%, 40%, 60%, 80% {-o-transform: translateX(3px);}
+}
+
+@keyframes shake {
+    0%, 100% {transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-3px);}
+    20%, 40%, 60%, 80% {transform: translateX(3px);}
+}
+
+#spellwrap {
+    position: absolute;
+    width: 320px;
+    height: 480px;
+    overflow: hidden;
+    top:0;left:0;
+}
+
+.spell {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 320px;
+    height: 200px;
+    background-color: white;
+}
+
+.spell img {
+    position: absolute;
+    width: 320px;
+    left: 320px;
+    -webkit-animation: spell_animation 3s linear 0s 1 normal;
+       -moz-animation: spell_animation 3s linear 0s 1 normal;
+        -ms-animation: spell_animation 3s linear 0s 1 normal;
+         -o-animation: spell_animation 3s linear 0s 1 normal;
+            animation: spell_animation 3s linear 0s 1 normal;
+}
+
+@-webkit-keyframes spell_animation {
+    0% { left: 320px; }
+    30% { left: 0px; }
+    100% { left: 0px; }
+}
+@-moz-keyframes spell_animation {
+    0% { left: 320px; }
+    30% { left: 0px; }
+    100% { left: 0px; }
+}
+@-ms-keyframes spell_animation {
+    0% { left: 320px; }
+    30% { left: 0px; }
+    100% { left: 0px; }
+}
+@-o-keyframes spell_animation {
+    0% { left: 320px; }
+    30% { left: 0px; }
+    100% { left: 0px; }
+}
+@keyframes spell_animation {
+    0% { left: 320px; }
+    30% { left: 0px; }
+    100% { left: 0px; }
+}
+
+#gameover {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 320px;
+    height: 200px;
+    overflow: hidden;
+    background-color: black;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+#spotlite_top:after {
+    position:absolute;
+    content: 'GAME OVER';
+    left: 115px;
+    top:80px;
+    font-size: 1.2em;
+    color:white;
+}
